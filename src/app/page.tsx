@@ -1,12 +1,27 @@
-import React from "react";
 
-function HomePageBondo() {
-    return (
-        <div>
-            <h1>Home Shadat store </h1>
-            Navbar ↓ PriceTicker ↓ Hero ↓ আজ দাম বেড়েছে ↓ আজ দাম কমেছে ↓ সব পণ্য ↓ ProductCard ↓ Footer
-        </div>
-    );
+// import getProducts from "../lib/api" 
+// import ProductCard from "../components/ProductCard" 
+
+const HomePage = async () => {
+  // const productData = await getProducts()
+
+  return (
+    <div>
+      <h1>Home Bazar Dor</h1>
+      
+
+      {/* <p>Total Products: {productData.length}</p> */}
+
+      {/* <div>
+        {productData.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+          />
+        ))}
+      </div> */}
+    </div>
+  )
 }
 
-export default HomePageBondo;
+export default HomePage
