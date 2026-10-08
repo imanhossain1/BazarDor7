@@ -1,6 +1,8 @@
 
 // import getProducts from "../lib/api" 
 // import ProductCard from "../components/ProductCard" 
+import Hero from "../components/Hero";
+import PriceUpSection from "../components/PriceUpSection";
 
 const HomePage = async () => {
   // const productData = await getProducts()
@@ -8,8 +10,8 @@ const HomePage = async () => {
   return (
     <div>
       <h1>Home Bazar Dor</h1>
-      
-
+      <Hero/>
+     <PriceUpSection/>
       {/* <p>Total Products: {productData.length}</p> */}
 
       {/* <div>
