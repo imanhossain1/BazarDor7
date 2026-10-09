@@ -1,11 +1,10 @@
-import React from 'react'
 
-function loading() {
+export default function Loading() {
   return (
-    <div>
-       <h1>loaidng page </h1>
+    <div className="container mx-auto px-4 py-10">
+      <p className="text-center text-lg">
+        পণ্যের তথ্য লোড হচ্ছে...
+      </p>
     </div>
-  )
+  );
 }
-
-export default loading
