@@ -4,10 +4,12 @@ import { getCategories } from "../lib/api";
 
 async function CategoryNav() {
   const categoryNavLink = await getCategories();
+ console.log(categoryNavLink);
+ 
 
   return (
     <div className="flex gap-3">
-      {categoryNavLink.map((category) => (
+      {categoryNavLink?.map((category) => (
         <Link
           key={category.id}
           href={`/category/${category.slug}`}

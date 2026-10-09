@@ -16,6 +16,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body>
+        
         <Navbar />
         {children}
       </body>

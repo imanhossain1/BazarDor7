@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import CategoryNav from "./CategoryNav";
 import PriceTicker from "./PriceTicker";
 
@@ -42,13 +43,13 @@ function Navbar() {
         {/* Sign In + Sign Up */}
         <div className="flex items-center gap-2">
 
-          <button className="btn btn-outline btn-sm md:btn-md">
+          <Link href="/signin" className="btn btn-outline btn-sm md:btn-md">
             সাইন ইন
-          </button>
+          </Link>
 
-          <button className="btn btn-primary btn-sm md:btn-md">
+          <Link href="/signup" className="btn btn-primary btn-sm md:btn-md">
             সাইন আপ
-          </button>
+          </Link>
 
         </div>
       </div>
