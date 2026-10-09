@@ -1,27 +1,20 @@
 
-// import getProducts from "../lib/api" 
 // import ProductCard from "../components/ProductCard" 
 import Hero from "../components/Hero";
 import PriceUpSection from "../components/PriceUpSection";
+import PriceDownSection from "../components/PriceDownSection";
+import AllProductsSection from "../components/AllProductsSection";
 
 const HomePage = async () => {
-  // const productData = await getProducts()
 
   return (
     <div>
       <h1>Home Bazar Dor</h1>
       <Hero/>
      <PriceUpSection/>
-      {/* <p>Total Products: {productData.length}</p> */}
-
-      {/* <div>
-        {productData.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-          />
-        ))}
-      </div> */}
+     <PriceDownSection/>
+     <AllProductsSection/>
+      
     </div>
   )
 }

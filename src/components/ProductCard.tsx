@@ -11,7 +11,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const changePercent = product.change.pct.toLocaleString("bn-BD");
 
   return (
-    <Link href={`/products/${product.slug}`}>
+    <Link href={`/product/${product.slug}`}>
       <div className="card h-full overflow-hidden bg-base-100 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
 
         {/* Product Emoji */}
